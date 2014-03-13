@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="site.css" rel="stylesheet" />
+    <link href="colors.css" rel="stylesheet" />
+
+    <style>
+
+    </style>
+
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+    <script src="hover.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+             window.setTimeout(function(){ portfolioClick(this); }, 500);
+
+            $('div.thumbnail').bind("click", function(event){
+
+                var imgTag = $('#img');
+
+                var img = $(this).data('img-path');
+                $('#fullImage').fadeIn("fast");
+                var url = "url('" + img + "')"
+                imgTag.attr("src", img );
+
+
+            });
+
+            $('#fullImage').bind("click", function(){
+                $(this).fadeOut("fast");
+            });
+
+         });
+
+
+
+    </script>
+
+    <style>
+
+
+    </style>
+    <title></title>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+
+            <img src="redkeylogo.png" />
+
+        </header>
+
+        <main>
+
+            <div class="menu-item color-purple absoluteCenter" id="portfolio">
+                Portfolio
+
+                <div class="menu-item hover-target color-purple hidden" data-key="Commercial">
+                    Commercial
+                </div>
+
+                <div class="menu-item hover-target color-purple hidden"  data-key="Event">
+                    Event
+                </div>
+
+                <div class="menu-item hover-target color-purple hidden"  data-key="Food">
+                    Food
+                </div>
+
+                <div class="menu-item hover-target color-purple hidden" data-key="People">
+                    People
+                </div>
+
+                <div class="menu-item hover-target color-purple hidden" data-key="Places">
+                    Places
+                </div>
+
+            </div>
+            <div id="thumbnails">
+               <div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-10.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-10.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-11.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-11.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-12.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-12.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-13.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-13.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-14.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-14.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-15.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-15.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-16.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-16.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-17.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-17.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-18.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-18.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-19.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-19.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-2.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-2.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-20.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-20.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-21.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-21.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-22.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-22.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-3.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-3.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-4.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-4.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-5.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-5.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-6.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-6.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-7.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-7.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-8.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-8.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Commercial/Commercial_fullsize-9.jpg" data-parent="Commercial" style="background-image: url('Commercial/Commercial_thumbs-9.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-2.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-2.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-3.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-3.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-4.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-4.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-5.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-5.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-6.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-6.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-7.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-7.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-8.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-8.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Event/Event_fullsize-9.jpg" data-parent="Event" style="background-image: url('Event/Event_thumbs-9.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-10.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-10.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-11.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-11.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-12.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-12.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-13.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-13.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-14.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-14.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-15.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-15.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-16.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-16.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-17.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-17.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-18.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-18.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-19.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-19.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-2.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-2.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-20.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-20.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-21.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-21.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-22.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-22.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-23.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-23.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-24.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-24.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-25.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-25.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-26.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-26.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-3.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-3.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-4.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-4.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-5.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-5.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-6.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-6.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-7.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-7.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-8.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-8.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Food/Food_fullsize-9.jpg" data-parent="Food" style="background-image: url('Food/Food_thumbs-9.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-10.jpg" data-parent="People" style="background-image: url('People/People_thumbs-10.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-11.jpg" data-parent="People" style="background-image: url('People/People_thumbs-11.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-12.jpg" data-parent="People" style="background-image: url('People/People_thumbs-12.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-13.jpg" data-parent="People" style="background-image: url('People/People_thumbs-13.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-14.jpg" data-parent="People" style="background-image: url('People/People_thumbs-14.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-15.jpg" data-parent="People" style="background-image: url('People/People_thumbs-15.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-16.jpg" data-parent="People" style="background-image: url('People/People_thumbs-16.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-17.jpg" data-parent="People" style="background-image: url('People/People_thumbs-17.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-18.jpg" data-parent="People" style="background-image: url('People/People_thumbs-18.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-19.jpg" data-parent="People" style="background-image: url('People/People_thumbs-19.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-2.jpg" data-parent="People" style="background-image: url('People/People_thumbs-2.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-20.jpg" data-parent="People" style="background-image: url('People/People_thumbs-20.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-21.jpg" data-parent="People" style="background-image: url('People/People_thumbs-21.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-22.jpg" data-parent="People" style="background-image: url('People/People_thumbs-22.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-23.jpg" data-parent="People" style="background-image: url('People/People_thumbs-23.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-24.jpg" data-parent="People" style="background-image: url('People/People_thumbs-24.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-25.jpg" data-parent="People" style="background-image: url('People/People_thumbs-25.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-26.jpg" data-parent="People" style="background-image: url('People/People_thumbs-26.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-3.jpg" data-parent="People" style="background-image: url('People/People_thumbs-3.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-4.jpg" data-parent="People" style="background-image: url('People/People_thumbs-4.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-5.jpg" data-parent="People" style="background-image: url('People/People_thumbs-5.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-6.jpg" data-parent="People" style="background-image: url('People/People_thumbs-6.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-7.jpg" data-parent="People" style="background-image: url('People/People_thumbs-7.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-8.jpg" data-parent="People" style="background-image: url('People/People_thumbs-8.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="People/People_fullsize-9.jpg" data-parent="People" style="background-image: url('People/People_thumbs-9.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-10.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-10.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-11.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-11.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-12.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-12.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-13.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-13.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-14.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-14.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-15.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-15.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-16.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-16.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-17.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-17.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-18.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-18.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-19.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-19.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-2.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-2.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-3.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-3.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-4.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-4.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-5.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-5.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-6.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-6.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-7.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-7.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-8.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-8.jpg');"></div>
+<div class="hidden thumbnail" data-img-path="Places/Places_fullsize-9.jpg" data-parent="Places" style="background-image: url('Places/Places_thumbs-9.jpg');"></div>
+            </div>
+            <div id="fullImage">
+                <img id="img" style="width: 600px" />
+
+            </div>
+        </main>
+
+</body>
+</html>

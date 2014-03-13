@@ -1,0 +1,145 @@
+
+body
+{
+    margin: 0;
+
+    background: #f2f9fe; /* Old browsers */
+    background: -moz-linear-gradient(left, #f2f9fe 0%, #d6f0fd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f9fe), color-stop(100%,#d6f0fd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #f2f9fe 0%,#d6f0fd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #f2f9fe 0%,#d6f0fd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #f2f9fe 0%,#d6f0fd 100%); /* IE10+ */
+    background: linear-gradient(to right, #f2f9fe 0%,#d6f0fd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=1 ); /* IE6-9 */
+}
+
+div#container
+{
+    width: 80%;
+    margin: auto;
+
+}
+
+.round
+{
+    border-radius: 50%;
+}
+
+div#selectedImage
+{
+
+}
+
+.main
+{
+    position: relative;
+
+}
+
+div#nav
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.hover-target
+{
+    line-height: 75px;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    text-align: center;
+}
+
+.hidden
+{
+    display: none;
+}
+
+
+        .menu-item
+        {
+            border-radius: 0;
+        }
+
+        .hover-target
+        {
+            line-height: 75px;
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            text-align: center;
+        }
+
+        div#portfolio
+        {
+            cursor: pointer;
+        }
+
+        div#thumbnails
+        {
+            position: relative;
+        }
+
+        .menu-item
+        {
+            position: relative;
+            line-height: 50px;
+            width: 100px;
+            height: 50px;
+            border-radius: 10%;
+            text-align: center;
+            box-shadow: 2px 2px 0px 0px #afafaf;
+        }
+
+        .thumbnail
+        {
+            width: 75px;
+            height: 75px;
+        }
+
+        /*
+        #fullImage {
+
+            width: 100%;
+            margin: auto;
+            z-index: 100;
+            position: relative;
+            background-color: black;
+            display: none;
+
+        }
+
+        #fullImage img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        */
+
+        #fullImage {
+            font-size: 0;
+            text-align: center;
+            z-index: 100;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background-color: black;
+            display: none;
+            top: 0;
+            left: 0;
+        }
+        #fullImage:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        #fullImage > img {
+            display: inline-block;
+            vertical-align: middle;
+            
+        }

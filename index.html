@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="site.css" rel="stylesheet" />
+    <link href="colors.css" rel="stylesheet" />
+
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('.hover-target').bind("click", function(event){
+
+                var category = $(this).data("hover-key");
+                var selector = "div[data-hover-parent='" + category + "']";
+
+                var state = $(this).data("open-state");
+
+                if (state == "closed" || state == null) {
+
+                    $(this).data("open-state", "open");
+
+                    var children = $(selector);
+
+                    var layer = 1;
+                    var top = 135;
+                    var right = 135;
+                    var delay = 150;
+                    var delayIndex = 1;
+
+                    var index = 0;
+                    children.each(function(){
+
+                        var child = $(this);
+                        var x = 0;
+                        var y = 0;
+                        if (index > 7)
+                        {
+                            layer++;
+                            index = 0
+                        }
+
+                        x = Math.cos( (index * Math.PI) / 4) * (right * layer);
+                        y = Math.sin( (index * Math.PI) / 4) * (top * layer);
+
+                        child.delay(delay * delayIndex).fadeIn("fast");
+                        child.css("position", "absolute");
+                        child.css("top", y+"%");
+                        child.css("right", x+"%");
+                        index++;
+                        delayIndex++;
+                    });
+                }
+                else
+                {
+                    $(this).data("open-state", "closed");
+                    $(selector).each(function(){
+
+                        $(this).fadeOut("fast");
+                    })
+                };
+            });
+
+         });
+
+    </script>
+
+    <style>
+
+
+    </style>
+    <title></title>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+
+            <img src="redkeylogo.jpg" />
+
+        </header>
+
+        <main>
+
+            <div id="nav">
+
+                <div class="round hover-target color-red" data-hover-key="portfolio">
+                    'folio
+
+                    <div class="round hover-target color-red hidden" data-hover-key="advertising" data-hover-parent="portfolio" >
+                        advertising
+                    </div>
+
+                    <div class="round hover-target color-red hidden" data-hover-key="event" data-hover-parent="portfolio" >
+                        event
+                    </div>
+
+                    <div class="round hover-target color-red hidden" data-hover-key="cover" data-hover-parent="portfolio" >
+                        cover
+                    </div>
+
+                    <div class="round hover-target color-red hidden" data-hover-key="food" data-hover-parent="portfolio" >
+                        food
+                    </div>
+
+                    <div class="round hover-target color-red hidden" data-hover-key="portraiture" data-hover-parent="portfolio" >
+                        portraiture
+                    </div>
+
+
+                    <div class="round hover-target color-red hidden" data-hover-key="architecture" data-hover-parent="portfolio" >
+                        architecture
+                    </div>
+
+
+                    <div class="round hover-target color-red hidden" data-hover-key="engagement" data-hover-parent="portfolio" >
+                        engagement
+                    </div>
+
+
+                    <div class="round hover-target color-red hidden" data-hover-key="fashion" data-hover-parent="portfolio" >
+                        fashion
+                    </div>
+
+                    <div class="round hover-target color-red hidden" data-hover-key="headshots" data-hover-parent="portfolio" >
+                        head shots
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer></footer>
+    </div>
+</body>
+</html>
